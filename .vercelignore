@@ -1,0 +1,5 @@
+# Files the Vercel CLI should never upload, even if they exist on your computer.
+.env
+.env.*
+node_modules
+test

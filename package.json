@@ -1,0 +1,26 @@
+{
+  "name": "discord-community-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Beginner-friendly Discord bot template: slash commands, leaderboards, level-up posts, and AI moderation with Claude. Supabase optional.",
+  "license": "MIT",
+  "author": "Pei Corvus Miller / AiofEffect LLC",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node bot/moderator.js",
+    "dev:worker": "node --env-file=.env bot/moderator.js",
+    "register": "node --env-file=.env scripts/register-commands.js",
+    "doctor": "node --env-file=.env scripts/doctor.js",
+    "check": "node scripts/check-secrets.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.118.0",
+    "@vercel/functions": "^3.10.5",
+    "discord-interactions": "^4.4.0",
+    "discord.js": "^14.28.0"
+  }
+}
